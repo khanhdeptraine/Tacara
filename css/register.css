@@ -1,0 +1,252 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;  /* chỉ ẩn cuộn ngang thôi */
+    overflow-y: auto;    /* cuộn dọc bình thường */
+    margin: 0;
+    padding: 0;
+}
+
+.line_register {
+    height: 1px;
+    
+    background-color: #dad9d9;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;; 
+    width: 100%;
+  
+}
+
+.dieuhuong{
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    margin: 50px;
+    
+}
+
+.dieuhuong a {
+    text-decoration: none; 
+    position: relative;
+    color: black; 
+    padding-bottom: 5px;
+}
+
+.dieuhuong a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black; 
+    left: 50%;
+    bottom: 0;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.dieuhuong a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+.registration-form {
+ 
+    display: flex;
+   
+    flex-direction: column;
+    
+    gap: 20px;
+    width: 90%; 
+    max-width: 750px; 
+    border-radius: 10px; 
+   
+    margin-left: 120px;
+    margin-right: auto;
+}
+
+.background-form{
+    background-color: #f9f9f9;
+    display: flex;
+    height: fit-content;
+   
+    flex-direction: column;
+    padding: 90px;
+    width: 90%; 
+    max-width: 750px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.registration-form p{
+    width: 379px;
+}
+.dob {
+    display: flex;
+    margin-bottom: 30px; 
+    width: 100%; 
+    max-width: 325px;
+}
+
+.dob select {
+    flex: 1;  
+    border: 1px solid #030303;
+    border-top: none;
+    padding: 15px;
+    outline: none;
+    min-width: 80px;
+}
+
+
+
+
+.form-register{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    
+}
+
+.name-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-name{
+    margin: 10px 0;
+    width: 325px;
+    border:none;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid black; 
+    padding: 15px;
+    outline: none;
+}
+.placeholder-title {
+    color: gray;
+    font-size: 14px;
+    opacity: 0.6; 
+    display: block;
+    margin-bottom: 5px;
+}
+
+.space-radio{
+    margin: 0  10px;
+}
+
+.email-password-group{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input-email,.input-password{
+    margin: 10px 0;
+    width: 325px;
+    border:none;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid black; 
+    padding: 15px;
+    outline: none;
+    
+}
+
+.btn-submit{
+    margin-top: 20px;
+    width: 325px;
+    color: white;
+    height: 40px;
+    background-color: #030303;
+}
+
+.btn-submit:hover{
+    background-color: white;
+    color: #030303;
+    border: #030303;
+}
+#register-form {
+    display: none;
+}
+
+
+.login-form h2 {
+    font-size: 15px;
+    font-weight: 400; 
+    color: gray;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-form input
+{
+    width: 325px;
+}
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 325px;
+}
+
+.password-wrapper input {
+    width: 100%; 
+    padding-right: 50px; 
+    height: 40px; 
+}
+
+.password-wrapper button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    
+    cursor: pointer;
+    font-size: 14px;
+    color: gray;
+}
+
+
+.options a ,.options p{
+    text-decoration: none;
+    color: gray;
+}
+
+.btn-login{
+    background-color: #030303;
+    color: #dad9d9;
+    width: 325px;
+}
+
+.btn-login:hover{
+    background-color: #dad9d9;
+    
+    color: #030303;
+    border: #030303 1px solid;
+}
+
+.login-form, .registration-form {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    position: absolute;
+    visibility: hidden;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+    visibility: visible;
+}

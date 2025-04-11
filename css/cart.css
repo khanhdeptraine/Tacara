@@ -1,0 +1,86 @@
+.cart-container {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item .card-body {
+    padding: 1rem;
+}
+
+.cart-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 15px;
+    border: none;
+}
+
+.card h5 {
+    font-weight: 600;
+}
+
+.card .btn-outline-primary,
+.card .btn-outline-danger {
+    border-radius: 20px;
+}
+
+.card .btn-success {
+    border-radius: 30px;
+    font-size: 1.1rem;
+}
+
+.card input.form-control {
+    border-radius: 10px;
+}
+.mini-cart {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100%;
+    background: white;
+    box-shadow: -4px 0 10px rgba(0,0,0,0.1);
+    transition: right 0.4s ease;
+    z-index: 999;
+    border-left: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-cart.open {
+    right: 0;
+}
+
+.mini-cart-header, .mini-cart-footer {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.mini-cart-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px 15px;
+}
+
+.mini-cart-item {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.mini-cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.mini-cart-details p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+}

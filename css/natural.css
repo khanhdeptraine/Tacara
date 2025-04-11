@@ -1,0 +1,233 @@
+.line-natural{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+
+
+.container-title {
+    display: flex;
+    background-color: #f9f9f9;
+    align-items: center;  
+    justify-content: space-between; 
+    width: 100%;
+ 
+}
+
+.container-title img {
+    width: 50%; 
+    max-width: 100%;
+}
+
+.container-title h1 {
+    width: 50%; 
+    text-align: center; 
+    font-size: 24px;
+    color: #333;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    font-size: 14px;
+    color: #666;
+    padding: 20px 0;
+    margin-left: 212px;
+    font-family: "Georgia", "Palatino Linotype", serif;
+    font-style: italic; 
+    font-size: 12px; 
+    opacity: 0.9; 
+}
+
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+
+.breadcrumb a:hover {
+    color: #d9534f;
+}
+
+.breadcrumb span {
+    color: #999;
+    font-weight: bold;
+}
+
+.container-products{
+    display: flex;
+    margin: 0 200px;
+}
+.products-container {
+    display: flex;
+    flex-wrap: wrap; 
+   width: 100%;
+    justify-content: flex-start;
+}
+.natural-products {
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    height: fit-content;
+}
+.natural-products:hover{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.natural-products img {
+    width: 100%;
+
+    height: auto;
+    border-radius: 5px;
+}
+
+.natural-title-product {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.natural-title-product-2 {
+    font-size: 14px;
+    color: #777;
+}
+
+.price-product {
+    font-size: 18px;
+    font-weight: bold;
+    color: #070707;
+}
+.select-button {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: white;
+    width: 100%;
+    background-color: #070707;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, opacity 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px); 
+}
+
+.natural-products:hover .select-button {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    
+}
+
+.select-button:hover {
+    background-color: #f9f9f9;
+    border: #333 1px solid;
+    color: #333; 
+}
+.product-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    background: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;  
+    display: none; 
+    
+}
+
+.wishlist-btn img {
+    width: 25px; 
+    height: 25px;
+    transition: transform 0.3s ease;
+}
+
+.natural-products:hover .wishlist-btn {
+    display: block; 
+}
+
+.wishlist-btn:hover img {
+    transform: scale(1.1); 
+}
+
+.filter-container{
+    width: 20%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sort-by,.filter-by,.filter-section,.natural-products{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.sort-by input,.filter-by input,.filter-section input{
+    margin: 10px 0;
+}
+.sort-by label,.filter-by label,.filter-section label{
+   
+    font-style: italic; 
+    font-size: 16px; 
+    opacity: 0.9; 
+}
+
+.sort-by h3,.filter-by h3,.filter-section h3{
+    font-size: 20px;
+}
+
+.group-natural,.group-lab-grown,.group-other{
+    display: flex;
+    flex-direction: column;
+    
+    font-style: italic; 
+    font-size: 16px; 
+    opacity: 0.9; 
+}
+
+.size-selection {
+    width: 100%;
+    display: none; 
+    margin-top: 10px;
+}
+
+.size-dropdown, .add-to-bag {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+    
+}
+
+
+.size-dropdown:hover{
+    background-color: #070707;
+    color: #f9f9f9;
+    border: #070707 solid 1px;
+
+}
